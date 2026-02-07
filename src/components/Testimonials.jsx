@@ -120,8 +120,8 @@ const Testimonials = () => {
     // Animation Loop
     useAnimationFrame((time, delta) => {
         if (!isPaused.current) {
-            // Speed: 0.03 for calmer float
-            const speed = 0.03; 
+            // Speed increased from 0.03 to 0.1
+            const speed = 0.1; 
             const newRotation = rotation.get() + speed * (delta / 10);
             rotation.set(newRotation);
         }
